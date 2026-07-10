@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reshmi Rajeev — Physical Design Engineer</title>
+  <meta name="description" content="Reshmi Rajeev — Physical Design Engineer at TSMC. VLSI, physical design, and place-and-route across advanced technology nodes." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #f7f8fa;
+      --border: #e3e6ea;
+      --text: #1a1f26;
+      --muted: #5b6673;
+      --accent: #2563a8;
+      --accent-soft: #eaf1f9;
+      --maxw: 820px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1319;
+        --surface: #161b23;
+        --border: #262d38;
+        --text: #e6e9ee;
+        --muted: #9aa5b3;
+        --accent: #6ea8e0;
+        --accent-soft: #17222f;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+    header {
+      padding: 56px 0 40px;
+      border-bottom: 1px solid var(--border);
+    }
+    header .wrap { padding-top: 0; padding-bottom: 0; }
+    h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+    }
+    .role {
+      margin: 6px 0 20px;
+      font-size: 1.15rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+    .contact span, .contact a { display: inline-flex; align-items: center; gap: 6px; }
+
+    main { padding: 8px 0 64px; }
+    section { padding: 32px 0 4px; border-bottom: 1px solid var(--border); }
+    section:last-child { border-bottom: none; }
+    h2 {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--muted);
+      margin: 0 0 20px;
+      font-weight: 700;
+    }
+    .summary { font-size: 1.05rem; color: var(--text); margin: 0; }
+
+    .item { margin-bottom: 26px; }
+    .item:last-child { margin-bottom: 6px; }
+    .item-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px 16px;
+    }
+    .item-title { font-weight: 700; font-size: 1.05rem; margin: 0; }
+    .item-org { color: var(--accent); font-weight: 600; }
+    .item-meta { color: var(--muted); font-size: 0.9rem; white-space: nowrap; }
+    ul.bullets { margin: 10px 0 0; padding-left: 20px; }
+    ul.bullets li { margin-bottom: 8px; color: var(--text); }
+    ul.bullets li::marker { color: var(--accent); }
+
+    .edu-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px 16px;
+      padding: 12px 0;
+      border-top: 1px solid var(--border);
+    }
+    .edu-row:first-of-type { border-top: none; }
+    .edu-degree { font-weight: 700; }
+    .edu-sub { color: var(--muted); font-size: 0.92rem; }
+
+    .skill-grid { display: grid; gap: 14px; }
+    .skill-row { display: grid; grid-template-columns: 190px 1fr; gap: 12px; }
+    .skill-label { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+    .chip {
+      background: var(--accent-soft);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 2px 11px;
+      font-size: 0.85rem;
+    }
+
+    .coursework, .certs { color: var(--text); margin: 0; }
+
+    footer {
+      padding: 28px 0 48px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+
+    @media (max-width: 560px) {
+      h1 { font-size: 1.9rem; }
+      header { padding: 40px 0 28px; }
+      .skill-row { grid-template-columns: 1fr; gap: 4px; }
+      .item-meta { white-space: normal; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Reshmi Rajeev</h1>
+      <div class="role">Physical Design Engineer</div>
+      <div class="contact">
+        <a href="mailto:rrajeev1@asu.edu">✉ rrajeev1@asu.edu</a>
+        <a href="https://www.linkedin.com/in/reshmi-rajeev/" target="_blank" rel="noopener">in/reshmi-rajeev</a>
+        <span>📍 San Jose, CA</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h2>Summary</h2>
+      <p class="summary">Physical Design Engineer at TSMC, San Jose, taking SoC partitions through the full physical design flow to tapeout and signoff on advanced technology nodes. Background in VLSI design, physical verification, and custom circuit design.</p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="item">
+        <div class="item-head">
+          <p class="item-title">Physical Design Engineer — <span class="item-org">TSMC</span></p>
+          <span class="item-meta">June 2021 – Present · San Jose, CA</span>
+        </div>
+        <ul class="bullets">
+          <li>Full-time engineer on the PD SoC team working on SoC partitions on the client front. Owned three partitions in N3 technology, taking them through to tapeout and signoff.</li>
+          <li>Run partitions through the complete PD flow and provide fixes for PDV / EMIR / timing issues and power, converging metrics based on flow-generated reports.</li>
+          <li>Apply fixes interactively and through ECOs in Cadence Innovus — resolving PDV (DRC, LVS, ANT, RLMB) and timing-sig issues from STA reports, and EMIR (effective R &amp; power) violations via grid changes from Voltus reports. Handle timing convergence and routing with Tcl scripting and Innovus commands.</li>
+          <li>Continuing to take ownership of new partitions, working from floorplan through to finish alongside ECO stages.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <p class="item-title">Design Enablement Intern — <span class="item-org">GlobalFoundries</span></p>
+          <span class="item-meta">June 2020 – Jan 2021 · Santa Clara, CA</span>
+        </div>
+        <ul class="bullets">
+          <li>Part of the Physical Verification (DRC) team on the InGen DRC project, which automates conversion of rule decks into TVF coding and verifies SVRF coding.</li>
+          <li>Developed Python scripts for project features including automatic Check Text Override (CTO) footnote extraction from rule decks, and improved the tool's coverage metrics across tech nodes.</li>
+          <li>Collaborated on design manual updates for 130NSX1; worked with rule decks across 12nm, 45nm, and 130nm using Mentor Graphics RVE / Calibre for rule testing.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <p class="item-title">Machine Learning Data Associate — <span class="item-org">Amazon Development Centre</span></p>
+          <span class="item-meta">Oct 2018 – May 2019 · Chennai, India</span>
+        </div>
+        <ul class="bullets">
+          <li>Worked on Amazon Alexa, processing data used to improve Alexa's responses and cloud performance.</li>
+          <li>Collaborated with a team of 30 members while consistently maintaining high individual and team metrics.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="edu-row">
+        <div>
+          <div class="edu-degree">M.S. in Engineering — Electrical Engineering</div>
+          <div class="edu-sub">Arizona State University · 3.89 / 4.0 GPA</div>
+        </div>
+        <span class="item-meta">May 2021</span>
+      </div>
+      <div class="edu-row">
+        <div>
+          <div class="edu-degree">B.E. — Electrical &amp; Electronics Engineering</div>
+          <div class="edu-sub">Anna University · 8.04 / 10 GPA</div>
+        </div>
+        <span class="item-meta">May 2018</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div class="skill-row">
+          <div class="skill-label">EDA &amp; Design Tools</div>
+          <div class="chips">
+            <span class="chip">Cadence Innovus</span>
+            <span class="chip">Virtuoso</span>
+            <span class="chip">HSPICE</span>
+            <span class="chip">Synopsys Design Compiler</span>
+            <span class="chip">PrimeTime</span>
+            <span class="chip">Voltus</span>
+            <span class="chip">STARRC</span>
+            <span class="chip">Mentor Calibre RVE</span>
+            <span class="chip">ModelSim</span>
+          </div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label">Programming</div>
+          <div class="chips">
+            <span class="chip">Python</span>
+            <span class="chip">Verilog</span>
+            <span class="chip">VHDL</span>
+          </div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label">Scripting</div>
+          <div class="chips">
+            <span class="chip">Tcl</span>
+            <span class="chip">Bash</span>
+            <span class="chip">Python</span>
+          </div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label">Platforms</div>
+          <div class="chips">
+            <span class="chip">Linux (Ubuntu)</span>
+            <span class="chip">macOS</span>
+            <span class="chip">Windows</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Academic Projects</h2>
+
+      <div class="item">
+        <div class="item-head">
+          <p class="item-title">Convolutional Neural Network with 4×4 Max-Pooling</p>
+          <span class="item-meta">Fall 2020</span>
+        </div>
+        <ul class="bullets">
+          <li>Designed and implemented RTL for 4×4 greyscale pixel-image processing through a CNN with a 3×3 convolution kernel and shift value; functional verification against a provided output file.</li>
+          <li>Synthesized with Design Compiler, verified the synthesized netlist, and ran automatic place-and-route (APR) in Innovus.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <p class="item-title">16-word × 16-bit Register File &amp; 4-to-16 Decoder (7nm)</p>
+          <span class="item-meta">Spring 2020</span>
+        </div>
+        <ul class="bullets">
+          <li>Custom circuit design of a 16×16 register-file array using an 8T SRAM cell, with a 4-to-16 decoder and precoder for read/write ports (RVT devices).</li>
+          <li>Completed DRC and LVS with functionality and corner-case extraction in the Cadence Virtuoso toolsuite; achieved 350 ps delay and 40.1 µm² total area.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <p class="item-title">4-to-1 Integrate-and-Fire (IF) Neuron (32nm)</p>
+          <span class="item-meta">Fall 2019</span>
+        </div>
+        <ul class="bullets">
+          <li>Integrate stage combines outputs of four neurons through synapses, feeding a firing neuron that outputs one bit when the sum ≥ 16.</li>
+          <li>Built in Cadence Virtuoso with DRC/LVS and RC extraction via STARRC; achieved 191 ps delay, 21 µm² area, and 21.16 µW power.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <p class="item-title">2-bit Adder Synthesis &amp; Standard-Cell Library (7nm PDK)</p>
+          <span class="item-meta">Spring 2020</span>
+        </div>
+        <ul class="bullets">
+          <li>RTL design and simulation with a ModelSim testbench; synthesized in Design Compiler and ran APR in Innovus, then imported GDS and evaluated against DRC/LVS.</li>
+          <li>Custom-designed NAND2xp5_ASAP7_75t_R (3 fins) driving a 4-inverter load, tested against DRC, LVS, and PEX extraction in Calibre; built single-cell and 3×3 array layouts.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Coursework</h2>
+      <p class="coursework">VLSI Design · Digital Systems &amp; Circuits · Python for Rapid Engineering · Hardware Acceleration &amp; FPGA Computation · VLSI Design Reliability · Analog IC · Advanced Analog IC · Semiconductor Theory · Digital Logic Circuits · Semiconductor Characterization · Nano Fabrication · Linear Integrated Circuits · Embedded Systems · Micro-controllers &amp; Microprocessors</p>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <p class="certs">Complete TensorFlow 2 &amp; Keras Deep Learning · VSD Static Timing Analysis I · Mentor Graphics — Writing Calibre nmDRC Rules · Basics of Calibre nm · IC Design &amp; Verification (Livewire)</p>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <div>© <span id="year"></span> Reshmi Rajeev</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
